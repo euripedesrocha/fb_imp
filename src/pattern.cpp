@@ -24,6 +24,7 @@ namespace {
 }
 
 namespace pattern {
+
     auto fbclassifier(unsigned int number)-> FBTypes{
         auto is_multiple_of_3 = multiple_of_N(number, 3);
         auto is_multiple_of_5 = multiple_of_N(number, 5);
@@ -32,10 +33,10 @@ namespace pattern {
             type = FBTypes::FizzBuzz;
         } else
         if(is_multiple_of_3){
-            type = FBTypes::Fizz;
+            type = FBTypes::Buzz;
         } else
         if(is_multiple_of_5){
-            type = FBTypes::Buzz;
+            type = FBTypes::Fizz;
         } else
         if(is_prime(number)){
             type = FBTypes::BuzzFizz;

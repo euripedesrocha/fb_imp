@@ -9,7 +9,7 @@ SCENARIO("A pattern classifier is used"){
         WHEN("It's passed to the classifier"){
             auto fizzbuzztype = fbclassifier(t);
             THEN("It returns Fizz"){
-                REQUIRE(fizzbuzztype == FBTypes::Fizz);
+                REQUIRE(fizzbuzztype == FBTypes::Buzz);
             }
         }
     }
@@ -18,7 +18,7 @@ SCENARIO("A pattern classifier is used"){
         WHEN("It's passed to the classifier"){
             auto fizzbuzztype = fbclassifier(t);
             THEN("It returns Fizz"){
-                REQUIRE(fizzbuzztype == FBTypes::Buzz);
+                REQUIRE(fizzbuzztype == FBTypes::Fizz);
             }
         }
     }

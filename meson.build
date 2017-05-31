@@ -3,7 +3,8 @@ project('fizzbuzz', 'cpp',
         version : '0.0.1',
         license : 'MIT')
 
-design_sources = ['src/main.cpp']
+design_sources = ['src/main.cpp'
+    ,'src/pattern.cpp']
 
 elf = executable('fizzbuz',
     design_sources,

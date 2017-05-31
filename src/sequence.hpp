@@ -1,16 +1,17 @@
 namespace sequence {
+    template<typename T>
     class fibonacci {
-        int nxt;
-        int current;
+        T nxt;
+        T current;
 
         public:
         fibonacci() : nxt(1), current(0){};
-        auto next() {
+        T next() {
             if(this->current < 1) {
                this->current += 1;
                return 1;
             }
-            auto out = this->nxt;
+            T out = this->nxt;
             this->nxt += this->current;
             this->current = out;
             return out;

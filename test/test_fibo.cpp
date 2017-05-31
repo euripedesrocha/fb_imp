@@ -2,7 +2,7 @@
 #include "sequence.hpp"
 
 SCENARIO("A sequence generator"){
-    sequence::fibonacci fibo_seq;
+    sequence::fibonacci<unsigned int> fibo_seq;
     GIVEN("It's called 8 times for a new value"){
         REQUIRE(fibo_seq.next()==1);
         REQUIRE(fibo_seq.next()==1);
