@@ -9,7 +9,17 @@ int main(int argc, char* argv[]){
         std::cerr << "Usage: " << argv[0] << " N" << std::endl;
         return 1;
     }
-    auto N = std::stoi(argv[1]);
+    unsigned int N;
+    try {
+        N = std::stoi(argv[1]);
+    } 
+    catch (const std::invalid_argument& ia) {
+        std::cerr << "Must be a number" << std::endl;
+    }
+    catch (const std::out_of_range& oor) {
+        std::cerr << "Out of range, try a smaller number" << std::endl;
+    }
+
     unsigned int number;
     sequence::fibonacci<decltype(number)> fibo;
     ptn::FBTypes type;
