@@ -1,5 +1,6 @@
 test_sources = ['test_main.cpp'
         ,'test_fibo.cpp'
+        ,'../src/pattern.cpp'
         ,'test_pattern.cpp']
     
 
