@@ -9,7 +9,7 @@ C++ based FizzBuzz implementation
 ## Limitations
 
 Since the sequence generated is Fibonacci, the primality test is based on a
-short list of know Fibonacci prime. The selected list is [OEISA005478](https://oeis.org/A005478)
+short list of known Fibonacci primes. The selected list is [OEISA005478](https://oeis.org/A005478)
 
 # Build:
   ```
